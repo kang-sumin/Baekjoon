@@ -1,0 +1,2 @@
+D:\Github\Baekjoon\C\1000\Debug\1000.exe
+D:\Github\Baekjoon\C\1000\Debug\1000.pdb
