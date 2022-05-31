@@ -1,15 +1,16 @@
 /*
-* ¹®Á¦¹øÈ£ : 2557
+* ë¬¸ì œë²ˆí˜¸ : 2557
 * 
-* ¹®Á¦ : Hello World!¸¦ Ãâ·ÂÇÏ½Ã¿À
-* ÀÔ·Â : ¾øÀ½
-* Ãâ·Â : Hello World!
+* ë¬¸ì œ : Hello World!ë¥¼ ì¶œë ¥í•˜ì‹œì˜¤
+* ì…ë ¥ : ì—†ìŒ
+* ì¶œë ¥ : Hello World!
 * 
 */
 
 #include <stdio.h>
 
 int main() {
+	//"Hello World!" ì¶œë ¥
 	printf("Hello World!");
 
 	return 0;
