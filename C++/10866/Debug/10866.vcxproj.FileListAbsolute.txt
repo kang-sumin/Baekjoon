@@ -1,0 +1,2 @@
+D:\Github\Baekjoon\C++\10866\Debug\10866.exe
+D:\Github\Baekjoon\C++\10866\Debug\10866.pdb
