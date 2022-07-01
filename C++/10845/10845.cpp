@@ -1,5 +1,5 @@
 /*
-* ¹®Á¦¹øÈ£ : 10845
+* ë¬¸ì œë²ˆí˜¸ : 10845
 * 
 * https://www.acmicpc.net/problem/10845
 */
@@ -7,26 +7,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//queue ìƒì„±, C++ STL ë¡œ í ìƒì„±
 queue <int> Q;
 
 int main() {
 
-	int N; //¸í·ÉÀÇ ¼ö¸¦ ÀúÀåÇÒ º¯¼ö N
+	int N; //ëª…ë ¹ì˜ ìˆ˜ë¥¼ ì €ìž¥í•  ë³€ìˆ˜ N
 	cin >> N;
 
-	//¸í·É¾î ºÐ¼®ÇØ¼­ Ãâ·ÂÇÔ
+	//ëª…ë ¹ì–´ ë¶„ì„í•´ì„œ ì¶œë ¥í•¨
 	for (int i = 0; i < N; i++) {
-		//¸í·É¾î str·Î ¹Þ¾Æ¼­ °É·¯³¿
+		//ëª…ë ¹ì–´ strë¡œ ë°›ì•„ì„œ ê±¸ëŸ¬ëƒ„
 		string str;
 		cin >> str;
 
-		//push : Á¤¼öx¸¦ Å¥¿¡ ³ÖÀ½
+		//push : ì •ìˆ˜xë¥¼ íì— ë„£ìŒ
 		if (str == "push") {
 			int x;
 			cin >> x;
 			Q.push(x);
 		}
-		//pop : °¡Àå ¾Õ Á¤¼ö¸¦ »©°í, ±× ¼ö Ãâ·Â, ¾Æ¹«°Íµµ ¾øÀ¸¸é -1 Ãâ·Â
+		//pop : ê°€ìž¥ ì•ž ì •ìˆ˜ë¥¼ ë¹¼ê³ , ê·¸ ìˆ˜ ì¶œë ¥, ì•„ë¬´ê²ƒë„ ì—†ìœ¼ë©´ -1 ì¶œë ¥
 		else if (str == "pop") {
 			if (Q.empty()) {
 				cout << "-1" << endl;
@@ -36,11 +37,11 @@ int main() {
 				Q.pop();
 			}
 		}
-		//Å¥°¡ ºñ¾úÀ¸¸é 1, ¾Æ´Ï¸é 0 Ãâ·Â
+		//íê°€ ë¹„ì—ˆìœ¼ë©´ 1, ì•„ë‹ˆë©´ 0 ì¶œë ¥
 		else if (str == "empty") {
 			cout << Q.empty() << endl;
 		}
-		//°¡Àå ¾Õ Á¤¼ö Ãâ·ÂÇÏ°í, ¾Æ¹«°Íµµ ¾øÀ¸¸é -1 Ãâ·Â
+		//ê°€ìž¥ ì•ž ì •ìˆ˜ ì¶œë ¥í•˜ê³ , ì•„ë¬´ê²ƒë„ ì—†ìœ¼ë©´ -1 ì¶œë ¥
 		else if (str == "front") {
 			if (Q.empty()) {
 				cout << "-1" << endl;
@@ -49,7 +50,7 @@ int main() {
 				cout << Q.front() << endl;
 			}
 		}
-		//°¡Àå µÚ Á¤¼ö Ãâ·ÂÇÏ°í, ¾Æ¹«°Íµµ ¾øÀ¸¸é -1 Ãâ·Â
+		//ê°€ìž¥ ë’¤ ì •ìˆ˜ ì¶œë ¥í•˜ê³ , ì•„ë¬´ê²ƒë„ ì—†ìœ¼ë©´ -1 ì¶œë ¥
 		else if (str == "back") {
 			if (Q.empty()) {
 				cout << "-1" << endl;
@@ -58,7 +59,7 @@ int main() {
 				cout << Q.back() << endl;
 			}
 		}
-		//Å¥¿¡ µé¾î°¡ ÀÖ´Â Á¤¼ö °³¼ö Ãâ·Â
+		//íì— ë“¤ì–´ê°€ ìžˆëŠ” ì •ìˆ˜ ê°œìˆ˜ ì¶œë ¥
 		else {
 			cout << Q.size() << endl;
 		}
