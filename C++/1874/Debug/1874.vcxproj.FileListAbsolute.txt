@@ -1,0 +1,2 @@
+D:\Github\Baekjoon\C++\1874\Debug\1874.exe
+D:\Github\Baekjoon\C++\1874\Debug\1874.pdb
